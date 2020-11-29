@@ -56,7 +56,9 @@ namespace paraApagar_2
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}"); /* Controlador padrao se eu não digitar nada vai ser o "Home"; Se não digitar nenhuma acção vai ser o Index, 
+                                                                          a questão do id? quer dizer que vai ser um atributo opcional*/
+
             });
         }
     }
